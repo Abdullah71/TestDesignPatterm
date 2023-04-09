@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import com.example.testdesignpatterns.R
-import com.example.testdesignpatterns.SampleModel
+import com.example.testdesignpatterns.models.SampleModel
 
 class MVPActivity : AppCompatActivity(), MVPInterface {
 

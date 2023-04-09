@@ -2,7 +2,7 @@ package com.example.testdesignpatterns.mvvm
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.testdesignpatterns.SampleModel
+import com.example.testdesignpatterns.models.SampleModel
 
 class MVVMViewModel : ViewModel() {
 

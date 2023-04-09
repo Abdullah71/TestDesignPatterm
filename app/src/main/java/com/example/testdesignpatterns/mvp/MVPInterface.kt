@@ -1,6 +1,6 @@
 package com.example.testdesignpatterns.mvp
 
-import com.example.testdesignpatterns.SampleModel
+import com.example.testdesignpatterns.models.SampleModel
 
 interface MVPInterface {
 

@@ -1,4 +1,4 @@
-package com.example.testdesignpatterns
+package com.example.testdesignpatterns.models
 
 class SampleSingletonModel private constructor(name: String, id: Int) {
 
