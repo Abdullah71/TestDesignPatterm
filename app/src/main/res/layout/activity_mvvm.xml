@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.testdesignpatterns.mvvm.MVVMViewModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/clMVVM"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".mvvm.MVVMActivity">
+
+        <TextView
+            android:id="@+id/textViewMVVM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.mutableLiveData}"
+            android:hint="@{@string/placeholder}"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonMVVM"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Button"
+            android:onClick="@{() -> viewModel.getSampleModelDetail()}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMVVM" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
