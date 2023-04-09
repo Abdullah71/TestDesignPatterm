@@ -9,4 +9,6 @@ Testing with
     -> Data binding
 
 
--->> also git verification done with GPG and SSH after signing in with proper account from android studio 
+-->> also git verification done with GPG and SSH 
+ -->> after signing in with proper account from android studio 
+  -->> and also setting up gpg for commits in android studio
